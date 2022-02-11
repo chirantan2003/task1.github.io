@@ -223,7 +223,12 @@ nav{
 
 .contact{
 	background-image: url("./images/paper.png");
-	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-image: url("./images/paper.png");
+	background-size: 100% 100%;*/
 	padding: 0.75rem 2.5rem;
 }
 
@@ -353,13 +358,55 @@ footer a{
 
 
 @media screen and (max-width: 1375px) {
-    .head{
+    
+.head{
 	height: auto;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-shadow: inset 0 0 0 1000px rgba(0, 50, 86, 0.9);
 	background-image: url(./images/bg.png);
+	overflow-x: hidden;
 }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+.contact_container {
+  	display: grid;
+  	grid-row-gap: 40px;
+  	grid-column-gap: 20px;
+  	/*background-color: #2196F3;*/
+  	padding-bottom: 20px;
+  	font-family: amiko;
+  	font-size: 1rem;
+  	overflow: hidden;
+}
+
+.form_section input{
+	border: none;
+	border-bottom: 1px solid black;
+	background: transparent;
+	width: 100%;
+	font-size: 0.75rem;
+}
+
+.field2 input{
+	width: 89%;
+}
+
+.number{
+	color: #FFA500;
+	font-size: 2rem;
+	font-family: rambla;
+}
+
+.details p{
+	line-height: 0px;
+	color: #737373;
+	font-size: 1rem;
+}
+
 
 }
